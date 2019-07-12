@@ -1,0 +1,109 @@
+.gridrowfull {
+    width: 100%;
+}
+
+.gridrow {
+    width: 100%;
+    margin: 0 auto;
+}
+
+// @media (min-width: 900px) {
+//     .gridrow {
+//         width: $gridwidthoriginal;
+//         margin: 0 auto;
+//     }
+// }
+
+@media (min-width: 1200px) {
+    .gridrow {
+        width: $gridwidth;
+        margin: 0 auto;
+    }
+}
+
+//fazer outro breakpoint creativo desta vez que não seja mobile nem desktop
+.gridrowfull,
+    .gridrow {
+        display: flex;
+        flex-wrap: wrap;
+    
+        @for $i from 1 through $gridcolumnsmobile {
+            .col-m#{$i} {
+                box-sizing: border-box;
+                width: percentage($i/$gridcolumnsmobile);
+                padding-left: $gridgutter / 2;
+                padding-right: $gridgutter / 2;
+            }
+    
+            .offset-m#{$i} {
+                margin-left: percentage($i/$gridcolumnsmobile);
+            }
+        }
+    
+        &.nogutter {
+            @for $i from 1 through $gridcolumnsmobile {
+                .col-m#{$i} {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 900px) {
+    .gridrowfull,
+    .gridrow {
+        display: flex;
+        flex-wrap: wrap;
+    
+        @for $i from 1 through $gridcolumnsoriginal {
+            .col-o#{$i} {
+                box-sizing: border-box;
+                width: percentage($i/$gridcolumnsoriginal);
+                padding-left: $gridgutter / 2;
+                padding-right: $gridgutter / 2;
+            }
+    
+            .offset-o#{$i} {
+                margin-left: percentage($i/$gridcolumnsoriginal);
+            }
+        }
+    
+        &.nogutter {
+            @for $i from 1 through $gridcolumnsoriginal {
+                .col-o#{$i} {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+.gridrowfull,
+.gridrow {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through $gridcolumns {
+        .col#{$i} {
+            box-sizing: border-box;
+            width: percentage($i/$gridcolumns);
+            padding-left: $gridgutter / 2;
+            padding-right: $gridgutter / 2;
+        }
+
+        .offset#{$i} {
+            margin-left: percentage($i/$gridcolumnsmobile);
+        }
+    }
+
+    &.nogutter {
+        @for $i from 1 through $gridcolumns {
+            .col#{$i} {
+                padding: 0;
+            }
+        }
+    }
+}
+}
