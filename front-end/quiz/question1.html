@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>BEIROUNDS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+sans:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body class="question">
+
+
+  <div class="indicators p-0 ">
+
+
+    <div class="row justify-content-center m-0">
+      <div class="col-1"><img src="img/avatar1.png" alt=""></div>
+
+      <div class="col-6 d-flex justify-content-around align-items-center">
+
+        <div id="circle1"class="circle"></div>
+        <div id="circle2"class="circle"></div>
+        <div id="circle3"class="circle"></div>
+        <div id="circle4"class="circle"></div>
+        <div id="circle5"class="circle"></div>
+        <div id="circle6"class="circle"></div>
+        <div id="circle7"class="circle"></div>
+        <div id="circle8"class="circle"></div>
+        <div id="circle9"class="circle"></div>
+        <div id="circle10"class="circle"></div>
+
+      </div>
+      <div class="col-1 d-flex justify-content-around align-items-center">
+        <h4>0 points</h4>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class=" question-box d-flex justify-content-center">
+
+    <p class="col-4 p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
+    <img class="col-4 p-3" src="img/pt.png" alt="">
+
+
+  </div>
+
+  <div class="answer-box d-flex justify-content-center p-4">
+    <div class="col-4">
+
+      <button onclick="chooseAnswer()" id="wrong" class="question-btn">11111111111</button>
+      <button class="question-btn m-3">22222222222</button>
+
+    </div>
+
+    <div class="col-4">
+
+      <button class="question-btn">33333333333</button>
+      <button id="right" class="question-btn m-3">44444444444</button>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="button-fade col-6 float-right m-2" id="next">
+
+    <button onClick="window.location='path1.html'" class="continue-btn" type="submit"
+      class="btn btn-primary mb-2 ">NEXT</button>
+
+  </div>
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/main.min.js"></script>
+
+
+  <script>
+    function chooseAnswer() {
+      document.getElementById("wrong").style.backgroundColor = "#e21936";
+      document.getElementById("right").style.backgroundColor = "green";
+      document.getElementById("right").style.borderColor = "green";
+      document.getElementById("next").style.opacity = 1;
+      document.getElementById("right").style.color = "white";
+      document.getElementById("wrong").style.color = "white";
+
+      document.getElementById("circle1").style.backgroundColor = "#e21936";
+      
+
+
+    }
+  </script>
+
+</body>
+
+</html>

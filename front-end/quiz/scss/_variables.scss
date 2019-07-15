@@ -1,39 +1,39 @@
-$titlesfont: "Montserrat";
-$titlesfontweights: "700";
-$bodyfont: "Muli";
-$bodyfontweights: "400";
+// Variables
 
-$primary: #E7194F;
-$secondary: #00BEC5;
-$graydark: #777;
-$gray: #CCC;
-$graylight: #F3F3F3;
-$white: #FFF;
-$black: #000;
+// Restate Bootstrap Variables
 
-$animationtime: 0.4s;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 
-$gridcolumnsmobile: 4;
-$gridwidthmobile: 768px;
-$gridcolumnsoriginal: 8;
-$gridwidthoriginal: 900px;
-$gridcolumns: 12;
-$gridgutter: 30px;
-$gridwidth: 1200px; 
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #BD5D38 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
 
-$formlineheight: 22px;
-$formborderwidth: 2px;
+$primary:       $orange !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
 
-$icomoon-font-family: "iconz" !default;
-$icomoon-font-path: "../fonts" !default;
-$iczarrow: "\e900";
-$iczbehance: "\e901";
-$iczdev: "\e902";
-$iczdribbble: "\e903";
-$iczfacebook: "\e904";
-$iczinstagram: "\e905";
-$iczmkt: "\e906";
-$icztwitter: "\e907";
-$iczhamburger: "\e908";
-$iczclose: "\e909";
-$iczdsgn: "\e90a";
+// Page Variables
+
+$sidebar-base-width: 17rem;

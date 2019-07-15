@@ -25,34 +25,46 @@
 
 </head>
 
-<body class="welcome">
-  
+<body class="age">
+
+
+  <div class="country-title m-4">
+
+
+    <h3>AVATAR</h3>
+
+
+  </div>
+
+  <div class="d-flex justify-content-center">
+
+
+    <button onclick="chooseAvatar()" id="female" class=" col-2 p-3 m-3 age-btn">FEMALE</button>
+    <button class=" col-2 p-3 m-3 age-btn">MALE</button>
+
+  </div>
+
+  <div class="nickname col-6 offset-4 p-4 justify-content-center">
     
- <div class="lang-select">
+      
+      <label class="d-flex" for="nickname">NICKNAME</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter Nickname">
+    
 
-  <i class="fa fa-globe-europe"></i>
-  <select name="language" id="">
-    <option>English</option>
-    <option>Français</option>
-    <option>Español</option>
-    <option>Português</option>
-   
-  </select>
+  </div>
 
- </div>
-  
- <div class="welcome-title"> 
-   
-  <h1>WELCOME TO BEIROUND</h1>
-  <h3>BE A PORTUGUESE LIKE US!</h3>
-  <div class="row p-4 justify-content-center max-100">
-      <div class="col-6"><input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter your e-mail"></div>
-    <div class="col-4 "><button onClick="window.location='country.html'" class="continue-btn" type="submit" class="btn btn-primary mb-2">CONTINUE</button> </div>
-    </div>
-</div>
- 
 
-  
+
+
+  <div class="button-fade col-6 float-right m-4 " id="next">
+
+    <button onClick="window.location='avatar.html'" class="continue-btn" type="submit"
+      class="btn btn-primary mb-2 ">START</button>
+
+  </div>
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -63,6 +75,17 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/main.min.js"></script>
+
+
+  <script>
+    function chooseAvatar() {
+      document.getElementById("female").style.borderWidth = "thick";
+      document.getElementById("female").style.borderColor = "#e21936";
+      document.getElementById("next").style.opacity = 1;
+
+
+    }
+  </script>
 
 </body>
 

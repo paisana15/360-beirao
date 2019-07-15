@@ -25,34 +25,38 @@
 
 </head>
 
-<body class="welcome">
-  
-    
- <div class="lang-select">
+<body class="questions">
 
-  <i class="fa fa-globe-europe"></i>
-  <select name="language" id="">
-    <option>English</option>
-    <option>Français</option>
-    <option>Español</option>
-    <option>Português</option>
-   
-  </select>
-
- </div>
-  
- <div class="welcome-title"> 
-   
-  <h1>WELCOME TO BEIROUND</h1>
-  <h3>BE A PORTUGUESE LIKE US!</h3>
-  <div class="row p-4 justify-content-center max-100">
-      <div class="col-6"><input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter your e-mail"></div>
-    <div class="col-4 "><button onClick="window.location='country.html'" class="continue-btn" type="submit" class="btn btn-primary mb-2">CONTINUE</button> </div>
-    </div>
-</div>
  
 
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          1      sdfsdfs
+        </div>
+        <div class="carousel-item">
+          2
+        </div>
+        <div class="carousel-item">
+          3
+        </div>
+      </div>
   
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  
+        <button class="continue-btn" type="submit" class="btn btn-primary mb-2 ">NEXT</button>
+  
+    </div>
+    </a>
+    </div>
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -63,6 +67,17 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/main.min.js"></script>
+
+
+  <script>
+    function chooseAge() {
+      document.getElementById("age").style.borderWidth = "thick";
+      document.getElementById("age").style.borderColor = "#e21936";
+      document.getElementById("next").style.opacity = 1;
+
+
+    }
+  </script>
 
 </body>
 
