@@ -1,0 +1,211 @@
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+ width: 100vw;
+  
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 600;
+  text-transform: uppercase;
+
+  
+}
+
+.max-100{
+  max-width: 100vw;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+.welcome{
+  background-image: url(../img/bg-welcome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffcc00;
+  
+}
+
+
+
+
+.continue-btn{
+
+  background-color: white;
+  border: 3px solid  #e21936;
+  border-radius: 7px ;
+  padding:.7rem 1.3rem;
+  font-weight: bold;
+}
+
+.continue-btn:hover{
+
+  background-color: #e21936;
+  color: white;
+}
+
+.welcome-title{
+
+  position: relative;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+}
+
+.welcome-title h1 {
+  font-size: 4rem;
+  line-height: 5.5rem;
+  color:  #e21936;
+  text-align: center;
+  font-weight: 700
+}
+
+.welcome-title h3 {
+ 
+  color:  #000;
+  text-align: center;
+}
+
+.welcome-title input {
+ 
+  padding: 1.6rem;
+  width: 400px;
+  float: right;
+  border-radius: 7px ;
+}
+
+
+
+select{
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.lang-select{
+
+  background-color: white;
+  border: 3px solid  #e21936;
+  border-radius: 10px ;
+  padding:.6rem;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  float: right;
+  margin: 2rem  15em 0 0;
+  
+
+}
+
+.lang-select i{
+
+  font-size: 2rem;
+  color:  #e21936;
+  padding-right: 1rem;
+}
+
+
+.country, .age {
+  background-image: url(../img/bg-pattern.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffcc00;
+  text-align: center;
+  
+}
+
+.country-title h3 {
+  font-size: 3rem;
+  line-height: 5.5rem;
+  color:  #e21936;
+  text-align: center;
+  font-weight: 700
+}
+
+.country img{
+
+  height: 70px;
+  width: 100px;
+  border: 1px solid #e21936;
+  padding: .8rem;
+}
+
+.country img:hover {
+
+  padding: 0;
+  border: 3px solid #e21936;
+}
+
+.country-hover {
+
+  padding: 0;
+  border: 3px solid #e21936;
+}
+
+a:active {
+
+  border-color: #e21936;
+}
+
+.flag-btn{
+
+  background-color: transparent;
+  border: none;
+  width: inherit;
+}
+
+.age-btn{
+
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  border-radius: 10px;
+  height: 90px;
+  width: 160px !important;
+  font-size: 1.3rem;
+  font-weight: bold ;
+ 
+}
+
+.age-btn:hover{
+
+  border: 3px solid #e21936;
+  
+ }
+
+.age-box-btn{
+
+  position: relative;
+  top: 10vh;
+}
+
+button:focus{
+  outline: none;
+}
+
+.button-fade{
+
+  opacity: .6;
+}
+
+.next-bottom{
+
+  position: relative;
+  top: 20vh;
+}
+
+
