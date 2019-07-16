@@ -1,12 +1,9 @@
-/* ******* EXERCÍCIO DESKTOP ******* */
-
-@import 'normalize';
-@import 'variables';
-@import 'fonts';
-@import 'utils';
-@import 'grid';
-@import 'header';
-@import 'about';
-@import 'portfolio';
-@import 'contacts';
-@import 'footer';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '..node_modules/@fullcalendar/core/main.css';
+@import '..node_modules/@fullcalendar/daygrid/main.css';
+@import '..node_modules/@fullcalendar/timegrid/main.css';
+@import '..node_modules/@fullcalendar/list/main.css';
+@import '../pages/book-now.scss';
+@import '../pages/tours.scss';
+@import '../pages/booking-schedule.scss';
+@import './main.scss';

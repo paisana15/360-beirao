@@ -1,0 +1,175 @@
+/*!
+ * Copyright (C) 2019 Joao Paisana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+ html,body {
+    margin:0;
+    padding:0;
+    line-height: 19px;
+    font-family: "Roboto", sans-serif;
+} 
+
+main{
+    height: 100vh;
+    background-color: #BCE0FD;
+    padding: 1rem;
+}
+
+.social-icons{
+    list-style: none;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+
+.header{
+	padding: 10px 16px; 
+}
+
+.auth{
+    text-transform: uppercase;
+}
+
+.beirao{
+    background-color: #FFCD00;
+    padding: 1rem;
+}
+.wrapper-offers{
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.offers{
+    background-color: #C8102E;
+}
+
+.card-img-1{
+    height:9rem;
+    width: 100%;
+    background-image: url("../assets/tour-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img-2{
+    height:9rem;
+    width: 100%;
+    background-image: url("../assets/tour-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 16px; 
+}
+
+.sticky {
+	position: fixed ;
+	top: 0 ;
+    width: 100%; 
+
+    & + .content{ 
+        padding-top: 102px ;
+    }
+}
+
+.offers-desc{
+    font-size: 17px;
+    color: white;
+}
+
+.span-regular{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.span-bold{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2{
+    line-height: 38px;
+    font-weight: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.title-offers{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFCD00;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h4{
+    line-height: 38px;
+    font-size: 31px;
+}
+
+.card-title{
+    font-weight: bold;
+    margin:0;
+    color: #FFCD00;
+}
+
+.wrapper-button{
+    justify-content: center;
+}
+
+.info-list{
+    color:white;
+    text-align: left;
+    margin-left: 24%;
+}
+
+.carousel-item{
+    margin-top: 2rem;
+}
+
+.card-tour{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    -webkit-box-shadow: 0px 3px 6px #707070;
+  -moz-box-shadow: 0px 3px 6px#707070;
+  box-shadow: 0px 3px 6px #707070; 
+}
+
+.reviews{
+    background-color: #C8102E;
+    padding-bottom: 1rem;
+}
+
+.find-us{
+    background-color: #C8102E;
+}
+
+.tour-title{
+    font-size: 19px;
+    color:white;
+    font-weight: bold;
+}
+
+.tour-number{
+    font-size: 31px;
+    color: white;
+    font-weight: bold;
+}
