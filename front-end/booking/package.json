@@ -1,5 +1,5 @@
 {
-  "name": "exercicio_resolvido",
+  "name": "bookingbeirao",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,6 +16,7 @@
     "fontawesome": "^5.6.3",
     "fullcalendar": "^3.10.0",
     "jquery": "^3.4.1",
-    "sass": "^1.20.1"
+    "sass": "^1.20.1",
+    "scss": "^0.2.4"
   }
 }
