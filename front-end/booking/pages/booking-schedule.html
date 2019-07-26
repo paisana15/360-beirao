@@ -1,3 +1,20 @@
+<!-- /*!
+ * Copyright (C) 2019 Joao Paisana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */ -->
+
 <!DOCTYPE html>
 <html>
 
@@ -30,39 +47,45 @@
               <button type="button" class="btn btn-light" style="margin-left: -0.25rem;">3 Information</button>
             </a>
         </div>
-        <div class="d-flex flex-column text-left pr-3 pl-3 mt-4">
-          <span class="span-bold mb-1">TOUR:</span>
-          <div class="wrapper-tour pb-3" style="background-color: white;border-left:4px solid #C8102E">
-            <span class="span-bold ml-4">TOUR #2</span>
-            <div class="d-flex ml-4">
-                <div class="d-flex mr-5">
-                    <span class="span-bold mr-1" style="color:#FFCD00;text-transform: uppercase">FROM</span>
-                    <span class="span-bold">Aliados</span>
-                  </div>
-                  <div class="d-flex">
-                      <span class="span-bold mr-1" style="color:#FFCD00;text-transform: uppercase">TO</span>
-                      <span class="span-bold" >Ribeira</span>
+        <div class="wrapper-all">
+          <div class="wrapper-tour-calendar">
+            <div class="d-flex flex-column text-left pr-3 pl-3 mt-4">
+              <span class="span-bold mb-1">TOUR:</span>
+              <div class="wrapper-tour pb-3" style="background-color: white;border-left:4px solid #C8102E">
+                <span class="span-bold ml-4">TOUR #2</span>
+                <div class="d-flex ml-4">
+                    <div class="d-flex mr-5">
+                        <span class="span-bold mr-1" style="color:#FFCD00;text-transform: uppercase">FROM</span>
+                        <span class="span-bold">Aliados</span>
+                      </div>
+                      <div class="d-flex">
+                          <span class="span-bold mr-1" style="color:#FFCD00;text-transform: uppercase">TO</span>
+                          <span class="span-bold" >Ribeira</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-        <div>
-          <p class="text-left pl-3 pr-3 mt-5" style="font-weight:bold;text-transform: uppercase">DATE:</p>
+              </div>
+
           <div>
-            <img src="../assets/calendar.png" alt="calendar">
+            <p class="text-left pl-3 pr-3 mt-5" style="font-weight:bold;text-transform: uppercase">DATE:</p>
+            <div>
+              <img src="../assets/calendar.png" alt="calendar">
+            </div>
           </div>
         </div>
-        <div class="schedule">
-            <p class="text-left pl-3 pr-3 mt-5" style="font-weight:bold;text-transform: uppercase">time:</p>
-          <img src="../assets/schedules.png" alt="schedule">
-        </div>
-        <div class="add-adult">
-            <p class="text-left pl-3 pr-3 mt-5" style="font-weight:bold;text-transform: uppercase">adults:</p>
-          <div class="wrapper-add d-flex">
-            <img src="../assets/pax.png" alt="pax">
+        <div class="wrapper-tour-schedule">
+          <div class="schedule">
+              <p class="text-left pl-3 pr-3 mt-5" style="font-weight:bold;text-transform: uppercase">time:</p>
+            <img src="../assets/schedules.png" alt="schedule">
+          </div>
+          <div class="add-adult">
+              <p class="text-left pl-3 pr-3 mt-5" style="font-weight:bold;text-transform: uppercase">adults:</p>
+            <div class="wrapper-add d-flex">
+              <img src="../assets/pax.png" alt="pax">
+            </div>
           </div>
         </div>
+      </div>
         <div class="mb-3 pb-5 mt-5">
           <a href="./booking-confirm.html">
             <button class="pt-2 pb-2" style="width:20rem;background-color:#C8102E;text-transform: uppercase; color:white;-webkit-box-shadow: 5px 5px 0px #000;
@@ -74,20 +97,14 @@
           </a>
         </div>
       </div>
-        <footer>
-            <div class="pb-3 pt-3">
-                <p class="gray" style="margin-top: -0.5rem;">Terms and Conditions</p>
-                <p class="gray" style="margin-top: -0.5rem;">Privacy Policy</p>
-                <p class="gray" style="margin-top: -0.5rem;">Cookies Policy</p>
-            </div>
-            <p class="gray">&copy; 2019 by Licor Beirão&reg;</p>
-        </footer>
-      
-    
-
-    <script type="text/javascript">
-        
-    </script>
+      <footer class="text-center mt-3">
+        <div class="pb-3 pt-3">
+            <a href="" class="gray" style="margin-top: -0.5rem;">Terms and Conditions</a>
+            <a href="" class="gray" style="margin-top: -0.5rem;">Privacy Policy</a>
+            <a href="" class="gray" style="margin-top: -0.5rem;">Cookies Policy</a>
+        </div>
+        <p> &copy; 2019 by Licor Beirão&reg; </p>
+    </footer>
 </body>
 
 

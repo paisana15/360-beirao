@@ -19,7 +19,7 @@
     margin:0;
     padding:0;
     line-height: 19px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 } 
 
 main{
@@ -33,10 +33,32 @@ main{
     overflow-x: hidden;
 }
 
+.header{
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.header-menu{
+    display: none;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding-right: 1rem;
+}
+
 
 .sticky{
     background-color: white;
-    z-index:100;
+    justify-content: space-between;
+    z-index: 100;
+    padding-bottom: 0;
+    margin-top: 0;
+
+    .header-menu{
+        display: flex;
+    }
 }
 
 .wrapper-imgs{
@@ -132,6 +154,7 @@ main{
     }
 }
 
+
 .offers-desc{
     font-size: 17px;
     color: white;
@@ -186,8 +209,7 @@ h5{
 
 .info-list{
     color:white;
-    text-align: left;
-    margin-left: 10%;
+    align-items: center;
 }
 
 .carousel-item{
@@ -276,7 +298,7 @@ button{
 .sub-title{
     margin-bottom: 1.5rem;
     padding-top: 1.5rem;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .review{
@@ -289,4 +311,82 @@ button{
 
 .location{
     justify-content: center;
+}
+
+.header-desktop{
+    display: none;
+}
+
+
+@media (min-width: 576px) {
+    .wrapper-imgs{
+       justify-content: center;
+       margin: 3rem -6rem;
+    }
+    .img-1{
+        margin-left: 0;
+    }
+
+    .img-carrinha{
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper-imgs{
+       transform: scale(1.5);
+    }
+
+    .header-desktop{
+        display: none;
+    }
+
+    .header-menu{
+        display: none;
+    }
+
+    .sticky{
+    
+        .header-menu{
+            display: none;
+        }
+
+        .header-desktop{
+            display:flex;
+            margin-top: 1.5rem;
+    
+            .header-item{
+                margin-right: 1.5rem;
+                color: black!important;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .img-carrinha{
+        width: 700px; 
+        height: 350px;
+    }
+
+    .wrapper-offers{
+        display: flex;
+        margin-left: 5rem;
+        justify-content: center;
+    }
+
+    .desktop-offers{
+        display:flex;
+        flex-direction: column;
+        margin-right: 7rem;
+    }
+
+    .desktop-tour{
+        display:flex;
+        justify-content: center;
+    }
+
+    .wrapper-button-desktop{
+        display: flex;
+        flex-direction: column;
+    }
 }
